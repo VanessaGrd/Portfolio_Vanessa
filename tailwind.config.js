@@ -8,7 +8,47 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        trueGray: colors.neutral,
+        primary: {
+          50: "#5151CD",
+        },
+        secondary: {
+          50: "#FE7062",
+        },
+        dark: {
+          50: "#0A0909",
+          100: "#2D2E2E",
+        },
+        grey: {
+          50: "#F7FAFC",
+          100: "#656565",
+        },
+        lightBlue: {
+          50: "#E6EDFD",
+        },
+        white: {
+          50: "#FFFFFF",
+        },
+        success: {
+          50: "#a7c957",
+        },
+        error: {
+          50: "#e63946",
+        },
+        warning: {
+          50: "##5e548e",
+        },
+        info: {
+          50: "#669bbc",
+        },
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(100%)" },
+        },
       },
     },
     fontFamily: {
