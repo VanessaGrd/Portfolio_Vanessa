@@ -2,26 +2,37 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
+import Vanessa_Giraud from "../public/img/Vanessa_GIRAUD.png";
+import logoName from "../public/img/logoName.png";
 
-const Navbar = () => {
-  const navigation = ["About Me", "Stack", "Projects", "Contact"];
+export default function Navbar() {
+  const navigation = ["About Me", "Stack", "Projects"];
+
+  const onButtonClick = () => {
+    fetch("CV_Vanessa_Giraud_Développeuse_Web.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "CV_Vanessa_Giraud_Développeuse_Web.pdf";
+        alink.click();
+      });
+    });
+  };
 
   return (
-    <div id="about me" className="w-full lg:snap-start	">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
-        {/* Logo  */}
+    <div id="about me" className="w-full lg:snap-start">
+      <nav className="container relative flex flex-wrap items-center justify-between mt-4 mx-auto lg:justify-between xl:px-0 ">
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
-                <Link href="/">
-                  <span className="flex items-center space-x-2 text-2xl font-normal text-grey-500 dark:text-gray-100">
-                    <span>
-                      <Image src="/img/planet.svg" alt="N" width="200" height="200" className="w-24" />
-                    </span>
-                    <span>Vanessa G.</span>
+                <div className="flex flex-col lg:flex-row w-auto">
+                  <span className="flex items-center space-x-2 text-2xl font-normal flex-row text-grey-500 dark:text-gray-100">
+                    <Image src={Vanessa_Giraud} alt="N" width="170" height="100" className=" drop-shadow-xl " />
                   </span>
-                </Link>
+                </div>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
@@ -50,9 +61,7 @@ const Navbar = () => {
                         {item}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white-50 bg-primary-50 rounded-md lg:ml-5">
-                      Download CV
-                    </Link>
+                    <button className="w-full px-6 py-2 mt-3 text-center text-white-50 bg-primary-50 rounded-md lg:ml-5">Download CV</button>
                   </>
                 </Disclosure.Panel>
               </div>
@@ -80,15 +89,12 @@ const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white-50 bg-primary-50 rounded-md md:ml-5">
-            Download CV
-          </Link>
-
+          <button onClick={onButtonClick} className="px-6 py-2 text-white-50 bg-primary-50 rounded-md hover:bg-blue-800  md:ml-5">
+            Download my CV
+          </button>
           <ThemeChanger />
         </div>
       </nav>
     </div>
   );
-};
-
-export default Navbar;
+}

@@ -12,7 +12,7 @@ module.exports = {
           50: "#5151CD",
         },
         secondary: {
-          50: "#FE7062",
+          50: "#F8F8FF",
         },
         dark: {
           50: "#0A0909",
@@ -23,7 +23,8 @@ module.exports = {
           100: "#656565",
         },
         lightBlue: {
-          50: "#E6EDFD",
+          50: "#F0F1FE",
+          100: "#B8BAF8",
         },
         white: {
           50: "#FFFFFF",

@@ -1,7 +1,7 @@
 {
   "name": "nextly-template",
   "version": "0.1.0",
-  "description": "Nextly Landing Page Template",
+  "description": "Vanessa G. Portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -37,6 +37,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "eslint-config-prettier": "^8.8.0",
+    "file-loader": "^6.2.0",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.1"
   }
