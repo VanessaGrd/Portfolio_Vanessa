@@ -22,8 +22,8 @@ const Stack = () => {
 
   return (
   
-      <div id="stack" className="flex h-[100vh]  justify-center items-center lg:snap-start">
-        <div className="w-full bg-primary-50 flex justify-center">
+      <div id="stack" className="flex h-[100vh]  justify-center items-center lg:snap-start ">
+        <div className="w-full bg-primary-50 dark:bg-transparent flex justify-center">
           <div
             className=" bg-gray-200 
   bg-clip-padding backdrop-filter backdrop-blur-sm w-full bg-opacity-10 
@@ -73,7 +73,7 @@ const Stack = () => {
                 </div>
               </div>
               <div>
-                <Image src={stack} />
+                <Image className="hidden lg:flex" src={stack} />
               </div>
             </div>
           </div>

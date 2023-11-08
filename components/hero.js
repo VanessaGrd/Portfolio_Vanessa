@@ -6,7 +6,7 @@ import OIG from "../public/img/OIG.png";
 const Hero = () => {
   return (
     <div>
-      <Container className="flex flex-wrap mb-20 lg:mt-20 ">
+      <Container className="flex flex-wrap mb-40 lg:mt-20 ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <span className="text-4xl font-normal leading-snug tracking-tight text-primary-50 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 drop-shadow-xl">Vanessa GIRAUD</span>
