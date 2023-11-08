@@ -44,7 +44,7 @@ export default function Projects() {
             subtitle="My Web Developer Portfolio showcases my educational and personal projects, showcasing my web development expertise. This portfolio is available in darkmode and responsive. Explore my work and feel free to contact me for collaboration opportunities."
             techno="            Technologies used :
             HTML, SCSS, JavaScript, React, NextJs13, Tailwind"
-            link="vanessa-g-porfolio.netlify.app"
+            link="https://vanessa-g-porfolio.netlify.app/"
             picture={portfolio}
             github="https://github.com/VanessaGrd/Portfolio_Vanessa.git"
           />
