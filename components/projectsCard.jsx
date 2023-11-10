@@ -49,14 +49,14 @@ export default function ProjectsCard({picture, title, subtitle, techno, github, 
               target="_blank"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-50 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-primary-50 dark:hover:bg-primary-50 dark:focus:ring-blue-800"
             >
-              Visit Site
+              Visit website
             </a>
           )}
         </div>
       </div>
 
       {isModalOpen && (
-        <div className="fixed top-0 left-0 w-full h-full z-50 flex   overflow-auto bg-white-50">
+        <div className="fixed top-0 left-0 w-full h-full z-50 flex justify-center  overflow-auto bg-white-50">
           <div className="grid lg:grid-cols-2 gap-2 p-16 	">
             {modalImages.map((image, index) => (
               <Image className="rounded-lg" src={image} alt={title} />

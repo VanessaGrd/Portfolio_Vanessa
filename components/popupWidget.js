@@ -253,6 +253,6 @@ const PopupWidget = () => {
       </Disclosure>
     </div>
   );
-}
+};
 
 export default PopupWidget;

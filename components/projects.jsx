@@ -1,10 +1,6 @@
-import user1 from "../public/img/user1.jpg";
 import ProjectsCard from "./projectsCard";
 import wildkedin1 from "../public/img/Wildkedin1.png";
 import dailyexpat from "../public/img/dailyexpat.png";
-import applev from "../public/img/applev.png";
-import applev2 from "../public/img/applev2.png";
-import applev3 from "../public/img/applev3.png";
 import applevolunteers from "../public/img/applevolunteers.png";
 import emmaus from "../public/img/emmaus.png";
 import emmaus2 from "../public/img/emmaus2.png";
@@ -19,7 +15,14 @@ import stockholmeasy from "../public/img/stockholmeasy.png";
 import stockholm1 from "../public/img/stockholm1.png"
 import stockholm2 from "../public/img/stockholm2.png";
 import stockholm4 from "../public/img/stockholm4.png";
+import stockholm5 from "../public/img/stockholm5.png";
+import stockholm6 from "../public/img/stockholm6.png";
+import stockholm7 from "../public/img/stockholm7.png";
+
 import portfolio from "../public/img/portfolio.png";
+import emmaus5 from "../public/img/E1.png";
+import emmaus3 from "../public/img/E2.png";
+import emmaus4 from "../public/img/E3.png";
 
 
 export default function Projects() {
@@ -34,7 +37,7 @@ export default function Projects() {
             techno="            Technologies used :
             HTML, SCSS, JavaScript, React, NodeJs, ExpressJs, MySQL, Figma"
             picture={stockholmeasy}
-            modalImages={[stockholm1, stockholm2, stockholm4]}
+            modalImages={[stockholm5, stockholm6, stockholm1, stockholm2, stockholm7, stockholm4]}
             github="https://github.com/VanessaGrd/Stockholm-easy.git"
           />
         </div>
@@ -44,7 +47,6 @@ export default function Projects() {
             subtitle="My Web Developer Portfolio showcases my educational and personal projects, showcasing my web development expertise. This portfolio is available in darkmode and responsive. Explore my work and feel free to contact me for collaboration opportunities."
             techno="            Technologies used :
             HTML, SCSS, JavaScript, React, NextJs13, Tailwind"
-          
             picture={portfolio}
             github="https://github.com/VanessaGrd/Portfolio_Vanessa.git"
           />
@@ -68,7 +70,7 @@ export default function Projects() {
             Technologies used :
             HTML, CSS, JavaScript, React, NodeJs, ExpressJs, Git/Github, MySQL"
             picture={emmaus}
-            modalImages={[emmaus2]}
+            modalImages={[emmaus5, emmaus2, emmaus3, emmaus4]}
             github="https://github.com/VanessaGrd/Hackathon2-EmmausConnect.git"
           />
         </div>

@@ -90,7 +90,7 @@ export default function Navbar() {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <button onClick={onButtonClick} className="px-6 py-2 text-white-50 bg-primary-50 rounded-md hover:bg-blue-800  md:ml-5">
-            Download my CV
+            Download my resume
           </button>
           <ThemeChanger />
         </div>

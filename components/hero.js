@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="max-w-2xl mb-8">
             <span className="text-4xl font-normal leading-snug tracking-tight text-primary-50 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 drop-shadow-xl">Vanessa GIRAUD</span>
 
-            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white-50">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white-50 mt-4">
               Explore my web universe, where code is the star 🌠
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
