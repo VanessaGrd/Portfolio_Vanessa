@@ -62,6 +62,9 @@ export default function Navbar() {
                       </li>
                     ))}
                   </>
+                  <button onClick={onButtonClick} className="px-6 py-2 text-white-50 bg-primary-50 rounded-md hover:bg-blue-800  md:ml-5">
+                    Download my resume
+                  </button>
                 </Disclosure.Panel>
               </div>
             </>
