@@ -50,7 +50,7 @@ const PopupWidget = () => {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-primary-50 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-blue-800  focus:bg-blue-800  ease">
+            <Disclosure.Button className="fixed z-50 flex items-center justify-center transition duration-300 bg-primary-50 rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-blue-800  focus:bg-blue-800  ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}

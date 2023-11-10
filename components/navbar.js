@@ -3,7 +3,6 @@ import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import Vanessa_Giraud from "../public/img/Vanessa_GIRAUD.png";
-import logoName from "../public/img/logoName.png";
 
 export default function Navbar() {
   const navigation = ["About Me", "Stack", "Projects"];
@@ -36,7 +35,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                  className="px-2 py-1 ml-auto  text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
                 >
                   <svg className="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     {open && (
@@ -50,18 +49,18 @@ export default function Navbar() {
                   </svg>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                <Disclosure.Panel className="flex flex-wrap justify-center flex-col w-full my-5 lg:hidden">
                   <>
-                    {navigation.map((item, index) => (
-                      <Link
-                        key={index}
-                        href="/"
-                        className="w-full px-4 py-2 -ml-4 text-gray-800 rounded-md dark:text-gray-300 hover:text-primary-50 focus:text-primary-50 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
-                      >
-                        {item}
-                      </Link>
+                    {navigation.map((menu, index) => (
+                      <li className="list-none	" key={index}>
+                        <Link
+                          href={`#${menu.toLowerCase()}`}
+                          className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-primary-50 focus:text-primary-50 focus:bg-primary-100 focus:outline-none dark:focus:bg-gray-800"
+                        >
+                          {menu}
+                        </Link>
+                      </li>
                     ))}
-                    <button className="w-full px-6 py-2 mt-3 text-center text-white-50 bg-primary-50 rounded-md lg:ml-5">Download CV</button>
                   </>
                 </Disclosure.Panel>
               </div>
