@@ -23,6 +23,7 @@ import portfolio from "../public/img/portfolio.png";
 import emmaus5 from "../public/img/E1.png";
 import emmaus3 from "../public/img/E2.png";
 import emmaus4 from "../public/img/E3.png";
+import movie from "../public/img/movie+.png";
 
 
 export default function Projects() {
@@ -72,6 +73,18 @@ export default function Projects() {
             picture={emmaus}
             modalImages={[emmaus5, emmaus2, emmaus3, emmaus4]}
             github="https://github.com/VanessaGrd/Hackathon2-EmmausConnect.git"
+          />
+        </div>
+        <div>
+          <ProjectsCard
+            title="Movie +"
+            subtitle="My first project, developped during my web development studies, a smart platform showcasing movies, offering seamless sorting by release date, suggesting similar films.🍿"
+            techno="
+Technologies used :
+HTML, CSS, React, JavaScript, API, NodeJS, Express, Git/Github."
+            picture={movie}
+            link="https://movieplusapp.netlify.app/"
+            github="https://github.com/VanessaGrd/Movie_Plus.git"
           />
         </div>
         <div>
