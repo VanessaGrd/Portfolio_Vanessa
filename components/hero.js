@@ -6,10 +6,12 @@ import OIG from "../public/img/OIG.png";
 const Hero = () => {
   return (
     <div>
-      <Container className="flex flex-wrap mb-40 lg:mt-20 ">
+      <Container className="flex flex-wrap mb-40 lg:mt-20 w-full">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <span className="text-4xl font-normal leading-snug tracking-tight text-primary-50 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 drop-shadow-xl">Vanessa GIRAUD</span>
+            <span className="text-4xl font-normal leading-snug tracking-tight text-primary-50 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 drop-shadow-xl">
+              Vanessa GIRAUD
+            </span>
 
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white-50 mt-4">
               Explore my web universe, where code is the star 🌠
@@ -34,6 +36,7 @@ const Hero = () => {
                 <span> View my Linkedin</span>
               </a>
             </div>
+        
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">

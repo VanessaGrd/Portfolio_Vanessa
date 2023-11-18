@@ -5,7 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import Vanessa_Giraud from "../public/img/Vanessa_GIRAUD.png";
 
 export default function Navbar() {
-  const navigation = ["About Me", "Stack", "Projects"];
+  const navigation = ["About Me", "Stack", "Recommendations","Projects"];
 
   const onButtonClick = () => {
     fetch("CV_Vanessa_Giraud_Développeuse_Web.pdf").then((response) => {

@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import PopupWidget from "../components/popupWidget";
 import Stack from "../components/stack";
 import Projects from "../components/projects";
+import Recommendations from "../components/recommendations";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Stack />
+      <Recommendations/>
         <Projects />
     
 

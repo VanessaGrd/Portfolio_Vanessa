@@ -15,7 +15,7 @@ import Hero3 from "../public/img/hero3";
 const Stack = () => {
 
   return (
-    <div id="stack" className="flex h-[100vh]  justify-center items-center lg:snap-start ">
+    <div id="stack" className="flex h-[100vh]  justify-center items-center lg:snap-start mb-60 sm:mb-0">
       <div className="w-full bg-primary-50 dark:bg-transparent flex justify-center">
         <div
           className=" bg-gray-200 
@@ -71,7 +71,11 @@ const Stack = () => {
           </div>
         </div>
       </div>
+      
     </div>
+  
+        
+    
   );
 };
 
