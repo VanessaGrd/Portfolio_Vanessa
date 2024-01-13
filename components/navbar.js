@@ -8,13 +8,13 @@ export default function Navbar() {
   const navigation = ["About Me", "Stack", "Recommendations","Projects"];
 
   const onButtonClick = () => {
-    fetch("CV_Vanessa_Giraud_Développeuse_Web.pdf").then((response) => {
+    fetch("CV Vanessa GIRAUD - Alternance Développeuse Web.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
 
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "CV_Vanessa_Giraud_Développeuse_Web.pdf";
+        alink.download = "CV Vanessa GIRAUD - Alternance Développeuse Web.pdf";
         alink.click();
       });
     });
