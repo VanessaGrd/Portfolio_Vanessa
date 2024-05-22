@@ -62,7 +62,7 @@ export default function ProjectsCard({picture, title, subtitle, techno, github, 
               <Image className="rounded-lg" src={image} alt={title} />
             ))}
           </div>
-          <button className="text-grey-900 text-4xl fixed top-10 right-10" onClick={closeModal}>
+          <button className="text-secondary-50 bg-dark-100 rounded-md text-3xl p-2 fixed top-10 right-10" onClick={closeModal}>
             X
           </button>
         </div>

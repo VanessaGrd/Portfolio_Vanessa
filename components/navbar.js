@@ -8,7 +8,7 @@ export default function Navbar() {
   const navigation = ["About Me", "Stack", "Recommendations","Projects"];
 
   const onButtonClick = () => {
-    fetch("CV Vanessa GIRAUD - Alternance Développeuse Web.pdf").then((response) => {
+    fetch("CV Vanessa GIRAUD - Développeuse (2).pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
 

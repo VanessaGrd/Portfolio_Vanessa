@@ -1,7 +1,6 @@
-import ProjectsCard from "./projectsCard";
 import wildkedin1 from "../public/img/Wildkedin1.png";
-import dailyexpat from "../public/img/dailyexpat.png";
 import applevolunteers from "../public/img/applevolunteers.png";
+import dailyexpat from "../public/img/dailyexpat.png";
 import emmaus from "../public/img/emmaus.png";
 import emmaus2 from "../public/img/emmaus2.png";
 import innovin from "../public/img/innovin.png";
@@ -11,26 +10,63 @@ import innovin4 from "../public/img/innovin4.png";
 import innovin5 from "../public/img/innovin5.png";
 import innovin6 from "../public/img/innovin6.png";
 import innovin7 from "../public/img/innovin7.png";
-import stockholmeasy from "../public/img/stockholmeasy.png";
-import stockholm1 from "../public/img/stockholm1.png"
+import stockholm1 from "../public/img/stockholm1.png";
 import stockholm2 from "../public/img/stockholm2.png";
 import stockholm4 from "../public/img/stockholm4.png";
 import stockholm5 from "../public/img/stockholm5.png";
 import stockholm6 from "../public/img/stockholm6.png";
 import stockholm7 from "../public/img/stockholm7.png";
+import stockholmeasy from "../public/img/stockholmeasy.png";
+import ProjectsCard from "./projectsCard";
 
-import portfolio from "../public/img/portfolio.png";
 import emmaus5 from "../public/img/E1.png";
 import emmaus3 from "../public/img/E2.png";
 import emmaus4 from "../public/img/E3.png";
 import movie from "../public/img/movie+.png";
+import portfolio from "../public/img/portfolio.png";
 
+import PR_addMember from "../public/img/PR_CheckerAddMember.png";
+import PR_notification from "../public/img/PR_CheckerNotification.png";
+import PR_changePR from "../public/img/PR_checkerChangePR.png";
+import PR_connection from "../public/img/PR_checkerConnection.png";
+import PR_addProject from "../public/img/PR_checkerCreateProject.png";
+import PR_joinProject from "../public/img/PR_checkerJoinProject.png";
+import PR_login from "../public/img/PR_checkerLogin.png";
+import PR_projects from "../public/img/PR_checkerProjects.png";
+import PR_settins from "../public/img/PR_checkerSettings.png";
 
 export default function Projects() {
   return (
-    <div id="projects" className="flex justify-center mt-20 items-center flex-col lg:snap-start">
-      <div className="text-center text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 my-16">My projects 🪐</div>
+    <div
+      id="projects"
+      className="flex justify-center mt-20 items-center flex-col lg:snap-start"
+    >
+      <div className="text-center text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 my-16">
+        My projects 🪐
+      </div>
       <div className=" items-center grid grid-cols md:grid-cols-3 gap-4">
+        <div>
+          <ProjectsCard
+            title="PR_Checker"
+            subtitle="Collaborative project with 3 other developers which allows easier management of pull requests. 
+            Application used by Wild Code School trainers!👨‍🏫 "
+            techno="            Technologies used :
+            JavaScript, React, Supabase, HTML, CSS, Figma"
+            picture={PR_login}
+            modalImages={[
+              PR_login,
+              PR_connection,
+              PR_addProject,
+              PR_projects,
+              PR_joinProject,
+              PR_changePR,
+              PR_notification,
+              PR_settins,
+              PR_addMember,
+            ]}
+            github="https://github.com/VanessaGrd/Stockholm-easy.git"
+          />
+        </div>
         <div>
           <ProjectsCard
             title="Stockholm Easy"
@@ -38,8 +74,15 @@ export default function Projects() {
             techno="            Technologies used :
             HTML, SCSS, JavaScript, React, NodeJs, ExpressJs, MySQL, Figma"
             picture={stockholmeasy}
-            modalImages={[stockholm5, stockholm6, stockholm1, stockholm2, stockholm7, stockholm4]}
-            github="https://github.com/VanessaGrd/Stockholm-easy.git"
+            modalImages={[
+              stockholm5,
+              stockholm6,
+              stockholm1,
+              stockholm2,
+              stockholm7,
+              stockholm4,
+            ]}
+            github="https://github.com/VanessaGrd/PR-checker"
           />
         </div>
         <div>
@@ -59,7 +102,14 @@ export default function Projects() {
             techno="            Technologies used :
             HTML, CSS, JavaScript, React, NodeJs, ExpressJs, Git/Github, MySQL, MUI, Formik, Yup, Scrum, Trello, Figma"
             picture={innovin}
-            modalImages={[innovin2, innovin3, innovin4, innovin5, innovin6, innovin7]}
+            modalImages={[
+              innovin2,
+              innovin3,
+              innovin4,
+              innovin5,
+              innovin6,
+              innovin7,
+            ]}
             github="https://github.com/VanessaGrd/2023-02-JS-FT-Lyon-P3-InnoVin.git"
           />
         </div>

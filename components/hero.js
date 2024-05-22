@@ -8,7 +8,7 @@ const Hero = () => {
     <div>
       <Container className="flex flex-wrap mb-40 lg:mt-20 w-full">
         <div className="flex items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8">
+          <div className="max-w-3xl mb-8">
             <span className="text-4xl font-normal leading-snug tracking-tight text-primary-50 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white-50 drop-shadow-xl">
               Vanessa GIRAUD
             </span>
@@ -18,7 +18,7 @@ const Hero = () => {
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Transitioning from a 15-year career in healthcare, I dived headfirst into web development. <br></br>With a intensive training and a web agency internship, I now combine my coding
-              passion, teamwork, and creativity to navigate the digital landscape.
+              passion, teamwork, and creativity to navigate the digital landscape. Additionally, I completed an application tester training program, improving my technical skills and diversifying my knowledge.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
