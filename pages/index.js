@@ -16,6 +16,15 @@ const Home = () => {
         <meta name="description" content="Portoflio of Vanessa G." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1HN873YLB9"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-1HN873YLB9');
+      </script>
 
       <Navbar />
       <Hero />
