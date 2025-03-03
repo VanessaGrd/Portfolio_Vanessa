@@ -1,8 +1,8 @@
 import Head from "next/head";
+import Script from "next/script";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
-
 import PopupWidget from "../components/popupWidget";
 import Projects from "../components/projects";
 import Recommendations from "../components/recommendations";
