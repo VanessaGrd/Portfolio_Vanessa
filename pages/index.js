@@ -25,7 +25,7 @@ const Home = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-1HN873YLB9', { anonymize_ip: true });
+          gtag('config', 'G-1HN873YLB9', { 'storage': 'none', anonymize_ip: true });
         `}
       </Script>
       <Navbar />
